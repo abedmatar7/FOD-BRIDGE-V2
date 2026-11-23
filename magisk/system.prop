@@ -1,0 +1,20 @@
+# Xiaomi 12X (psyche) ColorOS 17 FOD & AOD Props (adapted from NEESS-COS-AOD-FOD-FIX)
+ro.nees.fod.compat=1
+ro.oplus.aod.fod.support=true
+persist.sys.fp.fod.screenoff=true
+persist.vendor.sys.fp.fod.lhbmoffafterresult=1
+
+# Fix persist.vendor.sys.fp.vendor=none so Goodix HIDL 2.1 binds fingerprint.goodix_fod.so
+persist.vendor.sys.fp.vendor=goodix_fod
+ro.boot.fpsensor=goodix_fod
+persist.vendor.sys.fp.module=ofilm
+persist.vendor.fingerprint.sensor_type=optical
+
+# Verified psyche 1080x2400 optical FOD geometry
+persist.vendor.fingerprint.optical.sensorlocation=540::2163
+persist.vendor.fingerprint.optical.iconlocation=237
+persist.vendor.fingerprint.optical.iconsize=214
+persist.vendor.sys.fp.fod.location.X_Y=433,2056
+persist.vendor.sys.fp.fod.size.width_height=214,214
+ro.hardware.fp.fod=true
+ro.hardware.fp.fod.location=low
